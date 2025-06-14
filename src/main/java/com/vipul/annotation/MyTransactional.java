@@ -1,4 +1,4 @@
-package com.vipul;
+package com.vipul.annotation;
 
 import org.springframework.aot.hint.annotation.Reflective;
 

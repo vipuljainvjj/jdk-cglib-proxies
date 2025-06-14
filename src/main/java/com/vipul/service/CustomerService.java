@@ -1,11 +1,14 @@
-package com.vipul;
+package com.vipul.service;
+
+import com.vipul.annotation.MyTransactional;
 
 public interface CustomerService {
 
-    @MyTransactional
     void create();
 
     void add();
 
+    @MyTransactional
     void createWithParams(String param1, String param2);
+
 }

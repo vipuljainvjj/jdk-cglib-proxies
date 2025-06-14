@@ -1,4 +1,6 @@
-package com.vipul;
+package com.vipul.service;
+
+import com.vipul.service.CustomerService;
 
 public class DefaultCustomerService implements CustomerService {
     @Override
@@ -13,6 +15,7 @@ public class DefaultCustomerService implements CustomerService {
 
     @Override
     public void createWithParams(String param1, String param2) {
-        System.out.println("create with params executed");
+        System.out.println("create with params executed " + param1 + " - " + param2);
     }
+
 }

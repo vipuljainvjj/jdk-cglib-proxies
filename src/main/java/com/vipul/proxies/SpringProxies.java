@@ -1,5 +1,8 @@
-package com.vipul;
+package com.vipul.proxies;
 
+import com.vipul.annotation.MyTransactional;
+import com.vipul.service.CustomerService;
+import com.vipul.service.DefaultCustomerService;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.aop.framework.ProxyFactory;
@@ -7,7 +10,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Method;
